@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact North</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	
+	<link rel="apple-touch-icon" href="/mobile/apple-touch-icon.png" />
+	<link rel="apple-touch-icon-precomposed" href="/mobile/apple-touch-icon-precomposed.png" />
+
+	
+	<link rel="stylesheet" href="styles/jquery.mobile-1.0b1.css" />
+
+	<script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+	<script src="js/behaviours.js"></script>
+	<script src="js/translationList.js"></script>
+	<script src="js/preInit.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.js"></script>
+	<script src="js/lawnchair-0.6.0.min.js"></script>
+	<!--<script src="js/lawnchair-adapter-blackberry-persistent-storage-0.6.0.js"></script>-->
+	<script src="js/oolp.js"></script>
+</head>
+<body>
+	<!--***************** 
+	******HOME PAGE****** 
+	******************-->
+	<div data-role="page" data-title="OOLP Search" id="page-home" class="page">
+		<div data-role="header" id="home-head" class="major-div">
+			<h1 class="title" data-tran="bg-image" data-lang="en" >Contact North</h1>
+			<a class="about-link" data-transition="slideup" data-iconpos="notext" data-icon="info" href="#page-about">About</a>
+		</div><!-- /#head -->
+		<div data-role="content" id="home-content" class="major-div">
+			<p class="intro" data-tran="text" >Search more than 1,000 online programs to earn a diploma or degree, and more than 18,000 online courses from Ontario's public colleges, universities, and other education providers.</p>
+
+			<h2 data-tran="text" >Find an online program or course:</h2>
+			<form action="" method="GET" id="oolp-search-form-mobile">
+				
+				<div data-role="fieldcontain">
+					<label for="keyword" data-tran="text" >Search for:</label>
+					<input type="search" name="keyword" id="keyword" value="" />
+				</div>
+
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup"  data-type="horizontal">
+						<legend><span data-tran="text" >Select programs or courses</span></legend>
+							<input type="radio" name="progCorChoice" id="radio-choice-1" value="prog" checked="checked" />
+							<label for="radio-choice-1" ><span data-tran="text">Programs</span></label>
+
+							<input type="radio" name="progCorChoice" id="radio-choice-2" value="course"  />
+							<label for="radio-choice-2"><span data-tran="text">Courses</span></label>
+					</fieldset>
+				</div>
+
+				<div data-role="fieldcontain">
+					<label for="select-choice-lvl" class="select" data-tran="text" >Choose level</label>
+					<select name="selectChoiceLvl" id="select-choice-lvl">
+						
+					</select>
+				</div>
+
+				<div data-role="fieldcontain">
+					<label for="select-choice-semester" class="select" data-tran="text">Semester</label>
+					<select name="selectChoiceSemester" id="select-choice-semester">
+						
+					</select>
+				</div>
+
+				<div data-role="fieldcontain" class="last">
+					<label for="select-choice-lang" class="select" data-tran="text" >Choose languages</label>
+					<select name="selectChoiceLang" id="select-choice-lang">
+						<option value="" data-tran="text" >All languages</option>
+						<option value="en" data-tran="text" >English</option>
+						<option value="fr" data-tran="text" >French</option>
+					</select>
+				</div>
+
+				<div data-role="fieldcontain" id="form-controls" class="ui-grid-a">
+					<div class="ui-block-a"><button type="reset" id="search-form-reset" data-tran="text" >Reset</button></div>
+					<div class="ui-block-b"><button type="submit" id="search-form-submit" data-theme="e" data-tran="text" >Search</button></div>
+				</div><!-- /#form-controls -->
+
+			</form>
+		</div><!-- /#content -->
+		<div data-role="footer" data-theme="c" id="home-footer" class="major-div ui-grid-a">
+			<div class="ui-block-a"><a class="btn-full-site" href="http://studyonline.ca/?forceFullSite=true" data-role="button" data-icon="grid" data-iconpos="left" ><span data-tran="text" >Full Site</span></a></div>
+			<div class="ui-block-b"><button class="btn-lang-switch" data-tran="switch" >Français</button></div>
+		</div><!-- /#footer -->
+	</div><!-- /#page-home -->
+
+	
+	<!--****************** 
+	******ABOUT PAGE****** 
+	*******************-->
+	<div data-role="page"  data-title="About | Ontario Online Learning Mobile" id="page-about" class="page">
+		<div data-role="header" id="about-head" class="major-div">
+			<h1 class="title" data-tran="bg-image" data-lang="en" >Ontario Online Portal</h1>
+			<a class="about-link" data-transition="slideup" data-iconpos="notext" data-icon="back" data-rel="back" href="#page-about">Home</a>
+		</div><!-- /#head -->
+		
+		<div data-role="content" id="about-content" class="major-div">
+			<h2 data-tran="text">About Us</h2>
+			<div data-tran="page" data-key="about">
+				<p>Call Us: <a href="tel:18779999149">1-877-999-9149</a></p>
+				<p><strong>What is Contact North ǀ</strong><strong> Contact Nord?</strong></p>
+                <p>As Ontario’s distance education and training network, Contact North ǀ   Contact Nord is a non-profit corporation, funded by the Government of   Ontario, that supports the province’s public colleges, universities,   school boards, literacy and other training providers to increase and   improve local access to online learning courses and programs for   Ontarians.</p>
+                <p>These online courses and programs are offered by Ontario’s 24 public   colleges, 20 public universities, as well as a range of other education   groups. You can also find secondary school, literacy and training   courses through this site.</p>
+                <p>With online learning you can earn a range of credentials, including   high school equivalency; a college certificate, diploma, or applied   degree; or a university degree.</p>
+                <p><strong>Who do we serve?</strong></p>
+                <p>We support Ontarians living in small, rural and remote areas as well as <a href="http://www.contactnorth.ca/resources/aboriginal">Aboriginal</a> and <a href="http://www.contactnorth.ca/resources/francophone">Francophone</a> communities across the province.</p>
+                <p><strong>What do we do?</strong></p>
+                <p>Our many services include:</p>
+                <ul>
+                  <li> Providing information about more than 10,000 online courses and more   than 800 online programs from Ontario’s colleges, universities, school   boards, literacy and training providers;</li>
+                  <li> Increasing local access to education and training opportunities   through the innovative use of technology including live connection to   classrooms, fully online, and a blend of live and online courses;</li>
+                  <li> Providing access to information on student support services including <a href="http://www.contactnorth.ca/student-services/advising">academic counselling</a>, <a href="http://www.contactnorth.ca/resources/financial">financial aid</a> and <a href="http://www.contactnorth.ca/student-resources/libraries">library services</a> available from the colleges, universities, school boards, literacy and other training providers.</li>
+                </ul>
+                <p><strong>When do we do it?</strong></p>
+                <p>We provide flexible hours of operation at our <a href="http://www.contactnorth.ca/student-services/access-centres">112 online learning centres</a> to accommodate the diverse needs of students.</p>
+				<p>
+				  For more information, please contact:<br/> 
+					Louise Gaudrault<br/>
+					Marketing & Communications Coordinator<br/>
+					Contact North | Contact Nord<br/>
+					410 Falconbridge Road<br/>
+					Sudbury, Ontario P3A 4S4<br/>
+					Tel: <a href="tel:17055257261">(705) 525-7261</a><br/>
+					Fax: <a href="tel:17055605548">(705) 560-5548</a><br/>
+					<a href="mailto:louise@contactnorth.ca">louise@contactnorth.ca</a>
+				</p>
+			</div>
+		</div><!-- /#content -->
+		
+		<div data-role="footer" data-theme="c" id="about-footer" class="major-div ui-grid-a">
+			<div class="ui-block-a"><a class="btn-full-site" href="http://studyonline.ca/?forceFullSite=true" data-role="button" data-icon="grid" data-iconpos="left" data-tran="text" >Full Site</a></div>
+			<div class="ui-block-b"><button class="btn-lang-switch" data-tran="switch" >Français</button></div>
+		</div><!-- /#footer -->
+	</div><!-- /#page-about -->
+	
+	
+	<!--******************** 
+	******RESULTS PAGE****** 
+	*********************-->
+	<div data-role="page"  data-title="Search Results | Ontario Online Learning Mobile" id="page-results" class="page">
+		<div data-role="header" id="results-head" class="major-div">
+			<h1 class="title" data-tran="bg-image" data-lang="en" >Search Results</h1>
+			<a class="about-link" data-transition="slideup" data-iconpos="notext" data-icon="info" href="#page-about">About</a>
+		</div><!-- /#head -->
+		
+		<div data-role="content" id="results-content" class="major-div">
+			
+		</div><!-- /#content -->
+		
+		<div data-role="footer" data-theme="c" id="results-footer" class="major-div" data-position="fixed" >
+			<div class="search-controls" class="ui-grid-a">
+				<div class="ui-block-a"><a class="btn-search-back" data-role="button" data-rel="back" ><span data-tran="text" >Back</span></a></div>
+				<div class="ui-block-b"><a class="btn-search-new" data-role="button" data-direction="reverse" href="#page-home" ><span data-tran="text" >New Search</span></a></div>
+			</div><!-- /.search-controls -->
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><a class="btn-full-site" href="http://studyonline.ca/?forceFullSite=true" data-role="button" data-icon="grid" data-iconpos="left" ><span data-tran="text" >Full Site</span></a></div>
+				<div class="ui-block-b"><button class="btn-lang-switch" data-tran="switch" >Français</button></div>
+			</div>
+		</div><!-- /#footer -->
+	</div><!-- /#page-results -->
+	
+	<script id="detailsPage" type="text/x-jQuery-tmpl">
+		<div data-role="page" data-url="/${pageId}" data-title="${title} | Ontario Online Learning Mobile" id="${pageId}" class="page details-page">
+			<div data-role="header" id="" class="major-div program-head">
+				<h1 class="title" data-tran="bg-image" data-lang="en" >${title}</h1>
+				<a class="about-link" data-transition="slideup" data-iconpos="notext" data-icon="info" href="#page-about">About</a>
+			</div><!-- /#head -->
+			
+			<div data-role="content" id="" class="major-div program-content">
+				<div class="program-info">
+					<a href="tel:18779999149" data-role="button" data-icon="arrow-r" data-theme="e" data-iconpos="right" data-tran="text">Call Us: 1-877-999-9149</a>
+					<h2>${title}</h2>
+					<p><strong>Description</strong><br />
+					${descrip}</p>
+					<p><strong>Institution: </strong>${instName}</p>
+					{{if type}}<p><strong>Type of program: </strong>${type}</p>{{/if}}
+					{{if semester}}<p><strong>Semester: </strong>${semester}</p>{{/if}}
+					{{if realtedItem.length > 0}}
+					<ul class="program-course-list" data-role="listview" data-inset="true">
+						<li data-role="list-divider">${pcTitle}</li>
+						{{each realtedItem}}<li><a href="#" class="related" data-id="${id}" data-progcor="${progCor}" >${name}</a></li>{{/each}}
+					</ul>
+					{{/if}}
+				</div>
+			</div><!-- /#content -->
+			
+			<div class="search-controls" class="ui-grid-a" data-position="fixed" >
+				<div class="ui-block-a"><a class="btn-search-back" data-role="button" data-rel="back" ><span data-tran="text" >Back</span></a></div>
+				<div class="ui-block-b"><a class="btn-search-new" data-role="button" data-direction="reverse" href="#page-home" ><span data-tran="text" >New Search</span></a></div>
+			</div><!-- /.search-controls -->
+			
+			<div data-role="footer" data-theme="c" class="major-div ui-grid-a program-footer" >
+				<div class="ui-block-a"><a class="btn-full-site" href="http://studyonline.ca/?forceFullSite=true" data-role="button" data-icon="grid" data-iconpos="left" ><span data-tran="text" >Full Site</span></a></div>
+				<div class="ui-block-b"><button class="btn-lang-switch" data-tran="switch" >Français</button></div>
+			</div><!-- /#footer -->
+		</div><!-- /#page-details -->
+    </script>
+</body>
+</html>
