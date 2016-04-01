@@ -1,0 +1,30 @@
+	<div data-role="page"  data-title="Program | Ontario Online Learning Mobile" id="${pageId}" class="page details-page">
+		<div data-role="header" id="" class="major-div program-head">
+			<h1 class="title" data-tran="bg-image" data-lang="en" >${title}</h1>
+			<a class="about-link" data-transition="pop" data-iconpos="notext" data-icon="info" href="#page-about">About</a>
+		</div><!-- /#head -->
+		
+		<div data-role="content" id="" class="major-div program-content">
+			<div class="program-info">
+				<h2>${title}</h2>
+				<p><strong>Description</strong><br />
+				${descrip}</p>
+				<p><strong>Institution: </strong>${instName}</p>
+				<p><strong>Type of program: </strong>${type}</p>
+				<ul class="program-course-list" data-role="listview" data-inset="true">
+					<li data-role="list-divider">${pcTitle}</li>
+					{{each realtedItem}}<li><a href="#" class="related" data-id="${relatedId}" >${relatedName}</a></li>{{/each}}
+				</ul>
+			</div>
+		</div><!-- /#content -->
+		
+		<div class="search-controls" class="ui-grid-a" >
+			<div class="ui-block-a"><a class="btn-search-back" data-role="button" data-rel="back" data-tran="text" >Back</a></div>
+			<div class="ui-block-b"><a class="btn-search-new" data-role="button" data-direction="reverse" href="#page-home" data-tran="text" >New Search</a></div>
+		</div><!-- /.search-controls -->
+		
+		<div data-role="footer" data-theme="c" class="major-div ui-grid-a program-footer">
+			<div class="ui-block-a"><a class="btn-full-site" href="/?device=desktop" data-role="button" data-icon="grid" data-iconpos="left" data-tran="text" >Full Site</a></div>
+			<div class="ui-block-b"><button class="btn-lang-switch" data-tran="switch" >Francais</button></div>
+		</div><!-- /#footer -->
+	</div><!-- /#page-program -->
